@@ -9,19 +9,19 @@ public class VariableScope {
     static int staticVariable = 26;
 
     public void showLocalVariable() {
-        int localVariable = 30;
-        System.out.println("Local Variable: " + localVariable);
+        age = 30;
+        System.out.println("Local Variable: " + age);
         System.out.println("Instance Variable (age): " + age);
         System.out.println("Instance Variable (name): " + name);
         System.out.println("Instance Variable (height): " + height);
-        System.out.println("Static Variable: " + staticVariable);
+        System.out.println("Static Variable (Age example): " + staticVariable);
     }
 
     public void showInstanceVariable() {
         System.out.println("Instance Variable (age): " + age);
         System.out.println("Instance Variable (name): " + name);
         System.out.println("Instance Variable (height): " + height);
-        System.out.println("Static Variable: " + staticVariable);
+        System.out.println("Static Variable (Age example): " + staticVariable);
     }
 
     public static void main(String[] args) {
