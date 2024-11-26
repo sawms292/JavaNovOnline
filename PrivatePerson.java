@@ -1,19 +1,22 @@
 public class PrivatePerson {
-
-    private int age = 24;            
-    private String name = "Saw"; 
-    private double height = 1.79;    
-    private double weight = 75.5;
+    //private fields
+    private int age;       
+    private String name;
+    private double height;
+    private double weight;
 
     public PrivatePerson(int age, String name, double height, double weight) {
         this.age = age;
         this.name = name;
         this.height = height;
         this.weight = weight;
-    }
+    }/*Hello,
+    these is
+    my
+    commend*/
 
     public double calculateBMI() {
-        return weight / (height * height);
+        return height / (weight + age);
     }
 
     public void displayDetails() {
@@ -25,7 +28,7 @@ public class PrivatePerson {
     }
 
     public static void main(String[] args) {
-        PrivatePerson person = new PrivatePerson(24, "Saw", 1.79, 75.5);
+        PrivatePerson person = new PrivatePerson(24, "Saw", 177.79, 75.5);
         person.displayDetails();
     }
 }
