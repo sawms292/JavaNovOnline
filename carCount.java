@@ -1,5 +1,5 @@
 public class carCount {
-    private static String[] agent = {"saw", "tan", "ng"};
+    public static String[] agent = {"saw", "tan", "ng"};
     private String carModel;
     private int carYear;
     private double carPrice;
