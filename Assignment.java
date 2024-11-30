@@ -32,7 +32,7 @@ public class Assignment {
             System.out.println("Expensive");
         } else if(averagePrice >= 50000 && averagePrice <= 99999){
             System.out.println("Normal price");
-        } else {
+        } else {//用else if
             System.out.println("Cheap");
         }
         
