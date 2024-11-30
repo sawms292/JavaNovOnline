@@ -30,13 +30,13 @@ public class Assignment {
         System.out.println("The average price of the cars is: " + averagePrice);
        if (averagePrice >=100000){
             System.out.println("Expensive");
-        } else if(averagePrice >= 50000 && averagePrice < 100000){
+        } else if(averagePrice >= 50000 && averagePrice <= 99999){
             System.out.println("Normal price");
         } else {
             System.out.println("Cheap");
         }
         
-        String check = (averagePrice >= 100000) ? "Expensive" : (averagePrice >= 50000 && averagePrice < 100000) ? "Normal price" : "Cheap";
+        String check = (averagePrice >= 100000) ? "Expensive" : (averagePrice >= 50000 && averagePrice <= 99999) ? "Normal price" : "Cheap";
         System.out.println(check);
     }
 
