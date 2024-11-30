@@ -8,7 +8,7 @@ public class forLoop {
             }else if(i == 26){
                 break;
             }
-            System.err.println("Now is " + i);
+            System.out.println("Now is " + i);
         }
     }
     
