@@ -25,7 +25,7 @@ public class Assignment7 {
                 for(int b=0; b<matrixThreeFour[a].length;b++){
                     System.out.print(matrixThreeFour[a][b] + " ");
                 }
-                System.out.println(" ");
+                System.out.println("");
             }
             break;
 
@@ -34,7 +34,6 @@ public class Assignment7 {
                 for(int j=0; j<matrixTwoThree[i].length;j++){
                     System.out.print("Enter the value for matrix []=" + i + "[]=" + j +"-->");
                    matrixTwoThree[i][j] = newScanner.nextInt();
-                   System.out.print(matrixTwoThree[i][j] + " ");
                 }
             }
 
@@ -42,7 +41,7 @@ public class Assignment7 {
                 for(int b=0; b<matrixTwoThree[a].length;b++){
                     System.out.print(matrixTwoThree[a][b] + " ");
                 }
-                System.out.println(" ");
+                System.out.println("");
             }
             break;
 
