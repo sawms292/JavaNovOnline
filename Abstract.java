@@ -4,9 +4,15 @@ abstract class Cars{
     abstract void price();
         
     void des(){
-        System.out.println("The power of dreams");
+        System.out.println("The power of Japan");
     }
+    void des1(){
+        System.out.println("The power of Germen");
+    }
+    void des2(){
+        System.out.println("The power of American");
     
+}
 }
 
 class toyota extends Cars{
@@ -44,12 +50,12 @@ class Abstract {
                 break;
             case "bmw":
                 Cars price2 = new bmw();
-                price2.des();
+                price2.des1();
                 price2.price();
                 break;
             case "tesla":
                 Cars price3 = new testla();
-                price3.des();
+                price3.des2();
                 price3.price();
                 break;
             default:
