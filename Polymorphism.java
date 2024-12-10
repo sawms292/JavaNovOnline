@@ -34,15 +34,15 @@ class Polymorphism {
         car = sc.nextLine().trim();
 
         if(car.equalsIgnoreCase("toyota")){
-            toyota price = new toyota();
+            Cars price = new toyota();
             price.price();
         }
         else if(car.equalsIgnoreCase("bmw")){
-            bmw price = new bmw();
+            Cars price = new bmw();
             price.price();
         }
         else if(car.equalsIgnoreCase("tesla")){
-            testla price = new testla();
+            Cars price = new testla();
             price.price();
         }else{
             System.out.println("Car name not found");
