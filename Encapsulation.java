@@ -55,7 +55,8 @@ public class Encapsulation{
         //End of input
 
         //Cal Bmi
-        bmiCal = (personInfo.getHeight()-100)/personInfo.getWeight();
+        double heightD = personInfo.getHeight()/100;
+        bmiCal = personInfo.getWeight()/(heightD*heightD);
         System.out.println("The person Name is: " + personInfo.getName() + " he/she Age is: " + personInfo.getAge() + " he/she bmi is: " + bmiCal);
         
         newScanner.close();

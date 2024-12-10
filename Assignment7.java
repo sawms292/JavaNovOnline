@@ -13,11 +13,11 @@ public class Assignment7 {
         UserOptions = newScanner.nextInt();
         switch(UserOptions){
             case 1:
+            try{
             for(int i=0; i<matrixThreeFour.length;i++){
                 for(int j=0; j<matrixThreeFour[i].length;j++){
                     System.out.print("Enter the value for matrix []=" + i + "[]=" + j +"-->");
-                   matrixThreeFour[i][j] = newScanner.nextInt();
-                   
+                   matrixThreeFour[i][j] = newScanner.nextInt();  
                 }
             }
 
@@ -27,10 +27,20 @@ public class Assignment7 {
                 }
                 System.out.println("");
             }
+
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Array Out Of Bounds");
+        }
+        finally{
+            System.out.println("End of options 1");
+        }
             break;
 
             case 2:
-            for(int i=0; i<matrixTwoThree.length;i++){
+            try{
+                
+            for(int i=0; i<12;i++){
                 for(int j=0; j<matrixTwoThree[i].length;j++){
                     System.out.print("Enter the value for matrix []=" + i + "[]=" + j +"-->");
                    matrixTwoThree[i][j] = newScanner.nextInt();
@@ -43,6 +53,13 @@ public class Assignment7 {
                 }
                 System.out.println("");
             }
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Array Out Of Bounds");
+        }
+        finally{
+            System.out.println("End of Options 2");
+        }
             break;
 
             case 3:
